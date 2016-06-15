@@ -7,10 +7,24 @@ ul,li{
 	list-style: none;
 }
 
+.beijing{
+	background: url(../image/bj.jpg) ;
+	background-position: 0 0;
+	animation: cloudmove 10s linear infinite;
+}
+@keyframes cloudmove{
+	from{
+		background-position: 0 0;
+	}
+	to{
+		background-position: -1000px 0;
+	}
+}
+
 #canvas{
 	display: block;
 	border: 1px solid black;
-	position: absolute;
+	position: fixed;
 	margin: auto;
 	top: 0;
 	bottom: 0;
@@ -62,12 +76,22 @@ ul,li{
 		opacity: 1;
 		transform: none;
 	}
+	#tishi{
+		margin-top: 50px;
+		font-size: 30px;
+	}
 	span{
+		width: 100px;
+		height: 30px;
 		cursor: pointer;
-		margin: 130px 30px;
-		padding: 10px;
+		text-align: center;
+		line-height: 30px;
+		margin-top: 50px;
 		display: inline-block;
 		color: #fff;
-		background: #51b433;
+		background: url(../image/anniu.png);
+	}
+	#qipu{
+		margin-left: 20px;
 	}
 }
